@@ -27,24 +27,32 @@ namespace Proyecto___Club
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            Niños_Menu nm = new Niños_Menu(this);
+            nm.ShowDialog();
         }
 
 
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            Menu_Staff ms = new Menu_Staff(this);
+            ms.ShowDialog();
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Form_Asistencias fa = new Form_Asistencias(this);
+            fa.ShowDialog();
         }
 
         private void metroTile3_Click_1(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            Form_Asistencias fa = new Form_Asistencias(this);
+            fa.ShowDialog();
         }
 
         private void Menu_Opciones_Load(object sender, EventArgs e)
@@ -54,7 +62,15 @@ namespace Proyecto___Club
 
         private void Menu_Opciones_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            try
+            {
+                form.Show();
+            }
+            catch
+            {
+
+             //   MessageBox.Show("Error: Utilice el constructor sobrecargado de la clase.");
+            }
         }
     }
 }

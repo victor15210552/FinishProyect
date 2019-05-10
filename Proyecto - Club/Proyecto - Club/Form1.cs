@@ -19,14 +19,23 @@ namespace Proyecto___Club
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            
-           
-          
+            this.Hide();
+            Form_Asistencias fa = new Form_Asistencias(this);
+            fa.ShowDialog();
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            
+            /*this.Hide();
+            Menu_Opciones fa = new Menu_Opciones(this);
+            fa.ShowDialog();*/
+
+            this.Hide();
+
+            SingletonMenu singleton = SingletonMenu.getInstance();
+            singleton.abrirMenuOpciones();
+
+            this.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

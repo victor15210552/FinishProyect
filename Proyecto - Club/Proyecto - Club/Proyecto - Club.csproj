@@ -104,6 +104,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Asistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Asistencias.Designer.cs">
+      <DependentUpon>Form_Asistencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     </Compile>
     <Compile Include="Menu_Opciones.Designer.cs">
       <DependentUpon>Menu_Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Staff.Designer.cs">
+      <DependentUpon>Menu_Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="Niños.cs">
       <SubType>Form</SubType>
@@ -158,14 +170,32 @@
     <Compile Include="ReporteBuilder.cs" />
     <Compile Include="SingletonMenu.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_baja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_baja.Designer.cs">
+      <DependentUpon>Staff_baja.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Asistencias.resx">
+      <DependentUpon>Form_Asistencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Opciones.resx">
       <DependentUpon>Menu_Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Staff.resx">
+      <DependentUpon>Menu_Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Niños.resx">
       <DependentUpon>Niños.cs</DependentUpon>
@@ -204,8 +234,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_baja.resx">
+      <DependentUpon>Staff_baja.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="club_ninos_ninasDataSet10.xsc">
       <DependentUpon>club_ninos_ninasDataSet10.xsd</DependentUpon>

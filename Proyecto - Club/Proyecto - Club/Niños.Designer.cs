@@ -3351,7 +3351,7 @@
             this.es_gasto_entretenimiento.MaxLength = 32767;
             this.es_gasto_entretenimiento.Name = "es_gasto_entretenimiento";
             this.es_gasto_entretenimiento.PasswordChar = '\0';
-            
+            this.es_gasto_entretenimiento.PromptText = "0";
             this.es_gasto_entretenimiento.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_entretenimiento.SelectedText = "";
             this.es_gasto_entretenimiento.SelectionLength = 0;
@@ -3394,7 +3394,7 @@
             this.es_gasto_telefono.MaxLength = 32767;
             this.es_gasto_telefono.Name = "es_gasto_telefono";
             this.es_gasto_telefono.PasswordChar = '\0';
-           
+            this.es_gasto_telefono.PromptText = "0";
             this.es_gasto_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_telefono.SelectedText = "";
             this.es_gasto_telefono.SelectionLength = 0;
@@ -3593,7 +3593,7 @@
             this.es_gasto_deudas.MaxLength = 32767;
             this.es_gasto_deudas.Name = "es_gasto_deudas";
             this.es_gasto_deudas.PasswordChar = '\0';
-           
+            this.es_gasto_deudas.PromptText = "0";
             this.es_gasto_deudas.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_deudas.SelectedText = "";
             this.es_gasto_deudas.SelectionLength = 0;
@@ -3636,7 +3636,7 @@
             this.es_gasto_despensa.MaxLength = 32767;
             this.es_gasto_despensa.Name = "es_gasto_despensa";
             this.es_gasto_despensa.PasswordChar = '\0';
-           
+            this.es_gasto_despensa.PromptText = "0";
             this.es_gasto_despensa.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_despensa.SelectedText = "";
             this.es_gasto_despensa.SelectionLength = 0;
@@ -3679,7 +3679,7 @@
             this.es_gasto_transporte.MaxLength = 32767;
             this.es_gasto_transporte.Name = "es_gasto_transporte";
             this.es_gasto_transporte.PasswordChar = '\0';
-            
+            this.es_gasto_transporte.PromptText = "0";
             this.es_gasto_transporte.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_transporte.SelectedText = "";
             this.es_gasto_transporte.SelectionLength = 0;
@@ -3722,7 +3722,7 @@
             this.es_gasto_tv.MaxLength = 32767;
             this.es_gasto_tv.Name = "es_gasto_tv";
             this.es_gasto_tv.PasswordChar = '\0';
-           
+            this.es_gasto_tv.PromptText = "0";
             this.es_gasto_tv.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_tv.SelectedText = "";
             this.es_gasto_tv.SelectionLength = 0;
@@ -3765,7 +3765,7 @@
             this.es_gasto_basura.MaxLength = 32767;
             this.es_gasto_basura.Name = "es_gasto_basura";
             this.es_gasto_basura.PasswordChar = '\0';
-           
+            this.es_gasto_basura.PromptText = "0";
             this.es_gasto_basura.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_basura.SelectedText = "";
             this.es_gasto_basura.SelectionLength = 0;
@@ -3808,7 +3808,7 @@
             this.es_gasto_agua.MaxLength = 32767;
             this.es_gasto_agua.Name = "es_gasto_agua";
             this.es_gasto_agua.PasswordChar = '\0';
-           
+            this.es_gasto_agua.PromptText = "0";
             this.es_gasto_agua.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_agua.SelectedText = "";
             this.es_gasto_agua.SelectionLength = 0;
@@ -3851,7 +3851,7 @@
             this.es_gasto_luz.MaxLength = 32767;
             this.es_gasto_luz.Name = "es_gasto_luz";
             this.es_gasto_luz.PasswordChar = '\0';
-           
+            this.es_gasto_luz.PromptText = "0";
             this.es_gasto_luz.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_luz.SelectedText = "";
             this.es_gasto_luz.SelectionLength = 0;
@@ -3894,7 +3894,7 @@
             this.es_gasto_vivienda.MaxLength = 32767;
             this.es_gasto_vivienda.Name = "es_gasto_vivienda";
             this.es_gasto_vivienda.PasswordChar = '\0';
-           
+            this.es_gasto_vivienda.PromptText = "0";
             this.es_gasto_vivienda.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.es_gasto_vivienda.SelectedText = "";
             this.es_gasto_vivienda.SelectionLength = 0;
@@ -4786,7 +4786,7 @@
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
-            
+            this.metroTextBox1.PromptText = "Nombre y telefono";
             this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox1.SelectedText = "";
             this.metroTextBox1.SelectionLength = 0;
@@ -4820,7 +4820,7 @@
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
-           
+            this.metroTextBox2.PromptText = "Nombre y telefono";
             this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox2.SelectedText = "";
             this.metroTextBox2.SelectionLength = 0;
@@ -4854,7 +4854,7 @@
             this.dg_aviso_emergencia1.MaxLength = 32767;
             this.dg_aviso_emergencia1.Name = "dg_aviso_emergencia1";
             this.dg_aviso_emergencia1.PasswordChar = '\0';
-           
+            this.dg_aviso_emergencia1.PromptText = "Nombre y telefono";
             this.dg_aviso_emergencia1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dg_aviso_emergencia1.SelectedText = "";
             this.dg_aviso_emergencia1.SelectionLength = 0;
@@ -6031,7 +6031,7 @@
             this.dg_aviso_emergencia3.MaxLength = 32767;
             this.dg_aviso_emergencia3.Name = "dg_aviso_emergencia3";
             this.dg_aviso_emergencia3.PasswordChar = '\0';
-          
+            this.dg_aviso_emergencia3.PromptText = "Nombre y telefono";
             this.dg_aviso_emergencia3.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dg_aviso_emergencia3.SelectedText = "";
             this.dg_aviso_emergencia3.SelectionLength = 0;
@@ -6063,7 +6063,7 @@
             this.dg_aviso_emergencia2.MaxLength = 32767;
             this.dg_aviso_emergencia2.Name = "dg_aviso_emergencia2";
             this.dg_aviso_emergencia2.PasswordChar = '\0';
-          
+            this.dg_aviso_emergencia2.PromptText = "Nombre y telefono";
             this.dg_aviso_emergencia2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dg_aviso_emergencia2.SelectedText = "";
             this.dg_aviso_emergencia2.SelectionLength = 0;
