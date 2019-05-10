@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="club_ninos_ninasDataSet" targetNamespace="http://tempuri.org/club_ninos_ninasDataSet6.xsd" xmlns:mstns="http://tempuri.org/club_ninos_ninasDataSet6.xsd" xmlns="http://tempuri.org/club_ninos_ninasDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="club_ninos_ninasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="club_ninos_ninasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto___Club.Properties.Settings.GlobalReference.Default.club_ninos_ninasConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="miembrosTableAdapter" GeneratorDataComponentClassName="miembrosTableAdapter" Name="miembros" UserDataComponentName="miembrosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.miembros" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, tipo FROM miembros</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nino_autorizacionTableAdapter" GeneratorDataComponentClassName="nino_autorizacionTableAdapter" Name="nino_autorizacion" UserDataComponentName="nino_autorizacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.nino_autorizacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, autorzacion_medica, autorizacion_salida_solo, autorizacion_foto_video, enterado_camaras FROM nino_autorizacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nino_desarollo_humanoTableAdapter" GeneratorDataComponentClassName="nino_desarollo_humanoTableAdapter" Name="nino_desarollo_humano" UserDataComponentName="nino_desarollo_humanoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.nino_desarollo_humano" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, alegre, amigable, callado, cooperador, curioso, comparte, berrinches, independiente, imaginativo, irritable, miedo, moja_cama, tolerante, compania_adulto, responsable, ordendo, chupa_dedo, sociable, persistente, timido, hace_tarea, hace_quehacer, va_solo_bano, terapia_previa, motivo_terapia, presenta_tics, diversiones, situaciones_incomodas, juegos_preferidos, tipo_castigo, obediente, juega_peligroso, reaccion_obscuridad, fobias_miedos, duerme_solo, duerme_con_padres, duerme_con_hermanos, duerme_otros, siseta_durante_dia, horas_siesta, horas_sueno, transtorno_sueno, pesadilla, insomnio, rechina_dientes, suena_tranquilo, habla_dormido, duerme_poco, otro_transtorno_sueno, horas_television, minutos_television, television_solo, television_compania, hora_aparatos_electronicos, minutos_aparatos_electronicos, ve_caricaturas, ve_telenovelas, ve_documentales, ve_series_policiacas, ve_concursos, ve_videos, ve_series_terror, visitas_familiares, cine, parque_diversines, conciertos, salida_usa, salida_deportiva, redes_sociales, otra_actividad, come_solo, bano_solo, peina_solo, lava_dientes, viste_solo, lava_manos FROM nino_desarollo_humano</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nino_familiaTableAdapter" GeneratorDataComponentClassName="nino_familiaTableAdapter" Name="nino_familia" UserDataComponentName="nino_familiaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.nino_familia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, tutores_situacion, nombre_padre, apellido_padre, fecha_nacim_padre, lugar_nacim_padre, nacionalidad_padre, Escolaridad_padre, Ocupacion_padre, lugar_trabajo_padre, tel_particular_padre, tel_trabajo_padre, celular_padre, email_padre, nombre_madre, apellido_madre, fecha_nacim_madre, lugar_nacim_madre, nacionalidad_madre, Escolaridad_madre, Ocupacion_madre, lugar_trabajo_madre, tel_particular_madre, tel_trabajo_madre, celular_madre, email_madre, restriccion_legal, tutor_autorizado, desintegracion_familiar, fallecimientos, nacimientos, situacion_economica, cambios_rutina, disciplica, juegos, al_acostarse, hora_alimentos, al_levantarse, hora_bano FROM nino_familia</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nino_medicosTableAdapter" GeneratorDataComponentClassName="nino_medicosTableAdapter" Name="nino_medicos" UserDataComponentName="nino_medicosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.nino_medicos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, alergias, medicamentos, cuidado_especial, rebeola, varicela, escarlatina, hepatitis, influenza, tifoidea, paperas, tosferina, otra_enfermedad, ataques_epilepticos, enfermedad_cronica, accidentes_graves, ha_sido_operado, tipo-operacion, cantidad_operaciones, fecha_operacion, piojos_liendres, frec_piojos_liendres, problema_habla, problema_vista, problema_oido, problema_tono_muscular, otro_problema, aparato_dental, aparato_anteojos, aparato_auditivo, aparato_ortopedico, otro_aparato FROM nino_medicos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ninos_bajaTableAdapter" GeneratorDataComponentClassName="ninos_bajaTableAdapter" Name="ninos_baja" UserDataComponentName="ninos_bajaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.ninos_baja" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, motivo, fecha_baja FROM ninos_baja</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ninos_datosTableAdapter" GeneratorDataComponentClassName="ninos_datosTableAdapter" Name="ninos_datos" UserDataComponentName="ninos_datosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.ninos_datos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, nombres, ap_paterno, ap_materno, fecha_nac, lugar_nac, nacionalidad, sexo, vive_con, telefono, dom_calle, dom_numero, dom_colonia, dom_codpost, dom_delegacion, dom_municipio, escuela, esc_turno, recoge1_nino, parent_recoge1, recoge2_nino, parent_recoge2, recoge3_nino, parent_recoge3, aviso_emergencia1, aviso_emergencia2, aviso_emergencia3, fecha_inscripcion, estado, imss, isste, isstecali, seguro_popular, particular FROM ninos_datos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ninos_socioeconomicoTableAdapter" GeneratorDataComponentClassName="ninos_socioeconomicoTableAdapter" Name="ninos_socioeconomico" UserDataComponentName="ninos_socioeconomicoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.ninos_socioeconomico" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, transporte, vivienda, cocina, comedor, sala, bano, dormitorio, lavado, jardin, patio, terraza, alberca, estacionamiento, tipo_vivienda, techo_vivienda, piso_vivienda, serv_luz, serv_agua, serv_drenaje, serv_gas, serv_rec_basura, serv_alumbrado_publico, serv_telefono, serv_tv, serv_area_recreativa, gasto_vivienda, gasto_luz, gasto_agua, gasto_rec_basura, gasto_telefono, gasto_tv, gasto_vehiculos, gasto_despensa, gasto_deudas, gasto_entretenimiento, gasto_mensual, tipo_familia, nivel_ingreso_mensual FROM ninos_socioeconomico</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="club_ninos_ninasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="club_ninos_ninasDataSet" msprop:Generator_UserDSName="club_ninos_ninasDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="miembros" msprop:Generator_TableClassName="miembrosDataTable" msprop:Generator_TableVarName="tablemiembros" msprop:Generator_TablePropName="miembros" msprop:Generator_RowDeletingName="miembrosRowDeleting" msprop:Generator_RowChangingName="miembrosRowChanging" msprop:Generator_RowEvHandlerName="miembrosRowChangeEventHandler" msprop:Generator_RowDeletedName="miembrosRowDeleted" msprop:Generator_UserTableName="miembros" msprop:Generator_RowChangedName="miembrosRowChanged" msprop:Generator_RowEvArgName="miembrosRowChangeEvent" msprop:Generator_RowClassName="miembrosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nino_autorizacion" msprop:Generator_TableClassName="nino_autorizacionDataTable" msprop:Generator_TableVarName="tablenino_autorizacion" msprop:Generator_TablePropName="nino_autorizacion" msprop:Generator_RowDeletingName="nino_autorizacionRowDeleting" msprop:Generator_RowChangingName="nino_autorizacionRowChanging" msprop:Generator_RowEvHandlerName="nino_autorizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="nino_autorizacionRowDeleted" msprop:Generator_UserTableName="nino_autorizacion" msprop:Generator_RowChangedName="nino_autorizacionRowChanged" msprop:Generator_RowEvArgName="nino_autorizacionRowChangeEvent" msprop:Generator_RowClassName="nino_autorizacionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nino_desarollo_humano" msprop:Generator_TableClassName="nino_desarollo_humanoDataTable" msprop:Generator_TableVarName="tablenino_desarollo_humano" msprop:Generator_TablePropName="nino_desarollo_humano" msprop:Generator_RowDeletingName="nino_desarollo_humanoRowDeleting" msprop:Generator_RowChangingName="nino_desarollo_humanoRowChanging" msprop:Generator_RowEvHandlerName="nino_desarollo_humanoRowChangeEventHandler" msprop:Generator_RowDeletedName="nino_desarollo_humanoRowDeleted" msprop:Generator_UserTableName="nino_desarollo_humano" msprop:Generator_RowChangedName="nino_desarollo_humanoRowChanged" msprop:Generator_RowEvArgName="nino_desarollo_humanoRowChangeEvent" msprop:Generator_RowClassName="nino_desarollo_humanoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nino_familia" msprop:Generator_TableClassName="nino_familiaDataTable" msprop:Generator_TableVarName="tablenino_familia" msprop:Generator_TablePropName="nino_familia" msprop:Generator_RowDeletingName="nino_familiaRowDeleting" msprop:Generator_RowChangingName="nino_familiaRowChanging" msprop:Generator_RowEvHandlerName="nino_familiaRowChangeEventHandler" msprop:Generator_RowDeletedName="nino_familiaRowDeleted" msprop:Generator_UserTableName="nino_familia" msprop:Generator_RowChangedName="nino_familiaRowChanged" msprop:Generator_RowEvArgName="nino_familiaRowChangeEvent" msprop:Generator_RowClassName="nino_familiaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nino_medicos" msprop:Generator_TableClassName="nino_medicosDataTable" msprop:Generator_TableVarName="tablenino_medicos" msprop:Generator_TablePropName="nino_medicos" msprop:Generator_RowDeletingName="nino_medicosRowDeleting" msprop:Generator_RowChangingName="nino_medicosRowChanging" msprop:Generator_RowEvHandlerName="nino_medicosRowChangeEventHandler" msprop:Generator_RowDeletedName="nino_medicosRowDeleted" msprop:Generator_UserTableName="nino_medicos" msprop:Generator_RowChangedName="nino_medicosRowChanged" msprop:Generator_RowEvArgName="nino_medicosRowChangeEvent" msprop:Generator_RowClassName="nino_medicosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ninos_baja" msprop:Generator_TableClassName="ninos_bajaDataTable" msprop:Generator_TableVarName="tableninos_baja" msprop:Generator_TablePropName="ninos_baja" msprop:Generator_RowDeletingName="ninos_bajaRowDeleting" msprop:Generator_RowChangingName="ninos_bajaRowChanging" msprop:Generator_RowEvHandlerName="ninos_bajaRowChangeEventHandler" msprop:Generator_RowDeletedName="ninos_bajaRowDeleted" msprop:Generator_UserTableName="ninos_baja" msprop:Generator_RowChangedName="ninos_bajaRowChanged" msprop:Generator_RowEvArgName="ninos_bajaRowChangeEvent" msprop:Generator_RowClassName="ninos_bajaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ninos_datos" msprop:Generator_TableClassName="ninos_datosDataTable" msprop:Generator_TableVarName="tableninos_datos" msprop:Generator_TablePropName="ninos_datos" msprop:Generator_RowDeletingName="ninos_datosRowDeleting" msprop:Generator_RowChangingName="ninos_datosRowChanging" msprop:Generator_RowEvHandlerName="ninos_datosRowChangeEventHandler" msprop:Generator_RowDeletedName="ninos_datosRowDeleted" msprop:Generator_UserTableName="ninos_datos" msprop:Generator_RowChangedName="ninos_datosRowChanged" msprop:Generator_RowEvArgName="ninos_datosRowChangeEvent" msprop:Generator_RowClassName="ninos_datosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ninos_socioeconomico" msprop:Generator_TableClassName="ninos_socioeconomicoDataTable" msprop:Generator_TableVarName="tableninos_socioeconomico" msprop:Generator_TablePropName="ninos_socioeconomico" msprop:Generator_RowDeletingName="ninos_socioeconomicoRowDeleting" msprop:Generator_RowChangingName="ninos_socioeconomicoRowChanging" msprop:Generator_RowEvHandlerName="ninos_socioeconomicoRowChangeEventHandler" msprop:Generator_RowDeletedName="ninos_socioeconomicoRowDeleted" msprop:Generator_UserTableName="ninos_socioeconomico" msprop:Generator_RowChangedName="ninos_socioeconomicoRowChanged" msprop:Generator_RowEvArgName="ninos_socioeconomicoRowChangeEvent" msprop:Generator_RowClassName="ninos_socioeconomicoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

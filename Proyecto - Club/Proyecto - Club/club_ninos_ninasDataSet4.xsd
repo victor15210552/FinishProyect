@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="club_ninos_ninasDataSet" targetNamespace="http://tempuri.org/club_ninos_ninasDataSet4.xsd" xmlns:mstns="http://tempuri.org/club_ninos_ninasDataSet4.xsd" xmlns="http://tempuri.org/club_ninos_ninasDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="club_ninos_ninasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="club_ninos_ninasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto___Club.Properties.Settings.GlobalReference.Default.club_ninos_ninasConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nino_familiaTableAdapter" GeneratorDataComponentClassName="nino_familiaTableAdapter" Name="nino_familia" UserDataComponentName="nino_familiaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="club_ninos_ninasConnectionString (Settings)" DbObjectName="club_ninos_ninas.nino_familia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT no_miembro, tutores_situacion, nombre_padre, apellido_padre, fecha_nacim_padre, lugar_nacim_padre, nacionalidad_padre, Escolaridad_padre, Ocupacion_padre, lugar_trabajo_padre, tel_particular_padre, tel_trabajo_padre, celular_padre, email_padre, nombre_madre, apellido_madre, fecha_nacim_madre, lugar_nacim_madre, nacionalidad_madre, Escolaridad_madre, Ocupacion_madre, lugar_trabajo_madre, tel_particular_madre, tel_trabajo_madre, celular_madre, email_madre, restriccion_legal, tutor_autorizado, desintegracion_familiar, fallecimientos, nacimientos, situacion_economica, cambios_rutina, disciplica, juegos, al_acostarse, hora_alimentos, al_levantarse, hora_bano FROM nino_familia</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="club_ninos_ninasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="club_ninos_ninasDataSet" msprop:Generator_UserDSName="club_ninos_ninasDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nino_familia" msprop:Generator_TableClassName="nino_familiaDataTable" msprop:Generator_TableVarName="tablenino_familia" msprop:Generator_TablePropName="nino_familia" msprop:Generator_RowDeletingName="nino_familiaRowDeleting" msprop:Generator_RowChangingName="nino_familiaRowChanging" msprop:Generator_RowEvHandlerName="nino_familiaRowChangeEventHandler" msprop:Generator_RowDeletedName="nino_familiaRowDeleted" msprop:Generator_UserTableName="nino_familia" msprop:Generator_RowChangedName="nino_familiaRowChanged" msprop:Generator_RowEvArgName="nino_familiaRowChangeEvent" msprop:Generator_RowClassName="nino_familiaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

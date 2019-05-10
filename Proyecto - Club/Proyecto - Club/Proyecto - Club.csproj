@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AEE0217A-2C7F-4F2E-A7A7-85B7388F701A}</ProjectGuid>
+    <ProjectGuid>{325F7E77-6101-4176-97F4-93750A79A968}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Proyecto___Club</RootNamespace>
@@ -33,8 +33,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\6to Semestre\Patrones de Diseño\Proyecto - Patrones -SinGit\packages\AForge.NET Framework-2.2.5\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\6to Semestre\Patrones de Diseño\Proyecto - Patrones -SinGit\packages\AForge.NET Framework-2.2.5\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\6to Semestre\Patrones de Diseño\Proyecto - Patrones -SinGit\packages\AForge.NET Framework-2.2.5\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Documents\Visual Studio 2017\Projects\ExamenPatrones\ExamenPatrones\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,23 +95,144 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder.cs" />
+    <Compile Include="cls_conexion.cs" />
+    <Compile Include="Director.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Opciones.Designer.cs">
+      <DependentUpon>Menu_Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños.Designer.cs">
+      <DependentUpon>Niños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Bajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños_Bajas.Designer.cs">
+      <DependentUpon>Niños_Bajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños_Menu.Designer.cs">
+      <DependentUpon>Niños_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños_Modificaciones.Designer.cs">
+      <DependentUpon>Niños_Modificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños_Reportes.Designer.cs">
+      <DependentUpon>Niños_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Reportes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niños_Reportes2.Designer.cs">
+      <DependentUpon>Niños_Reportes2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte.cs" />
+    <Compile Include="ReporteBuilder.cs" />
+    <Compile Include="SingletonMenu.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Opciones.resx">
+      <DependentUpon>Menu_Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños.resx">
+      <DependentUpon>Niños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños_Bajas.resx">
+      <DependentUpon>Niños_Bajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños_Menu.resx">
+      <DependentUpon>Niños_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños_Modificaciones.resx">
+      <DependentUpon>Niños_Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños_Reportes.resx">
+      <DependentUpon>Niños_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camara.resx">
+      <DependentUpon>Camara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niños_Reportes2.resx">
+      <DependentUpon>Niños_Reportes2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Camara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camara.Designer.cs">
+      <DependentUpon>Camara.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="club_ninos_ninasDataSet10.xsc">
+      <DependentUpon>club_ninos_ninasDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="club_ninos_ninasDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="club_ninos_ninasDataSet10.xss">
+      <DependentUpon>club_ninos_ninasDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="club_ninos_ninasDataSet11.xsc">
+      <DependentUpon>club_ninos_ninasDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="club_ninos_ninasDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="club_ninos_ninasDataSet11.xss">
+      <DependentUpon>club_ninos_ninasDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Microsoft.Reporting.WinForms.ReportDataSource.datasource" />
+    <None Include="Properties\DataSources\Niños.datasource" />
+    <None Include="Properties\DataSources\Niños_Reportes2.datasource" />
+    <None Include="Properties\DataSources\Reporte1.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +245,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

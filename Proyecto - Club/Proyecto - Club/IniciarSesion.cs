@@ -7,31 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Data.SqlTypes;
 
 namespace Proyecto___Club
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class IniciarSesion : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public IniciarSesion()
         {
             InitializeComponent();
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-            
-           
-          
-        }
 
-        private void metroTile1_Click(object sender, EventArgs e)
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void password_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            
         }
     }
 }
