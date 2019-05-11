@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Data.SqlTypes;
 
 namespace Proyecto___Club
 {
@@ -22,12 +14,35 @@ namespace Proyecto___Club
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            
+            cls_conexion miBD = new cls_conexion();
+
+            MySqlCommand consulta = new MySqlCommand("select * from usuarios where nombre = '" + nombre.Text + "' AND password = '" + password.Text + "' ;", miBD.conexion);
+            miBD.conexion.Open();
+
+            MySqlDataReader lectura = consulta.ExecuteReader();
+
+            if (lectura.Read())
+            {
+
+                this.Hide();
+                Menu_Opciones fa = new Menu_Opciones(this);
+                fa.ShowDialog();
+                password.Text = "";
+                nombre.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta.");
+            }
         }
 
         private void password_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btn_buscar_Click(sender, e);
+            }
         }
     }
 }
