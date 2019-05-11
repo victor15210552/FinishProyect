@@ -19,9 +19,7 @@ namespace Proyecto___Club
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form_Asistencias fa = new Form_Asistencias(this);
-            fa.ShowDialog();
+            
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
