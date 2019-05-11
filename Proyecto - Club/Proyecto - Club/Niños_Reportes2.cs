@@ -31,19 +31,23 @@ namespace Proyecto___Club
             this.comando = comando;
             this.tipo = tipo;
             InitializeComponent();
-            if (tipo == "Completo") { 
-            this.comando = "select * " + comando.Substring(136);
+            if (tipo == "Completo")
+            {
+                this.comando = "select * " + comando.Substring(136);
             }
         }
 
 
         private void Niños_Reportes2_Load(object sender, EventArgs e)
         {
-            if (tipo == "Individual") {
+            if (tipo == "Individual")
+            {
 
                 reporteIndividual();
 
-            } else if (tipo == "Completo") {
+            }
+            else if (tipo == "Completo")
+            {
 
                 reporteCompleto();
             }
@@ -66,7 +70,8 @@ namespace Proyecto___Club
             }
         }
 
-        public void reporteIndividual() {
+        public void reporteIndividual()
+        {
 
 
             cls_conexion miBD = new cls_conexion();
@@ -141,7 +146,8 @@ namespace Proyecto___Club
 
         }
 
-        public void reporteCompleto() {
+        public void reporteCompleto()
+        {
             reportViewer1.LocalReport.ReportPath = "Report1.rdlc";
 
             cls_conexion miBD = new cls_conexion();
