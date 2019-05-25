@@ -164,7 +164,6 @@
             this.rentr_staff_tbox.UseSelectable = true;
             this.rentr_staff_tbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.rentr_staff_tbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.rentr_staff_tbox.Click += new System.EventHandler(this.rentr_staff_tbox_Click);
             // 
             // rentr_staff_label
             // 
@@ -174,7 +173,6 @@
             this.rentr_staff_label.Size = new System.Drawing.Size(52, 19);
             this.rentr_staff_label.TabIndex = 141;
             this.rentr_staff_label.Text = "Razón: ";
-            this.rentr_staff_label.Click += new System.EventHandler(this.rentr_staff_label_Click);
             // 
             // entrada_staff_chbox
             // 
@@ -193,7 +191,6 @@
             this.entrada_staff_label.Size = new System.Drawing.Size(183, 19);
             this.entrada_staff_label.TabIndex = 139;
             this.entrada_staff_label.Text = "Prohibida su entrada al Club: ";
-            this.entrada_staff_label.Click += new System.EventHandler(this.entrada_staff_label_Click);
             // 
             // vol_staff_chbox
             // 
@@ -209,7 +206,7 @@
             this.vol_staff_label.AutoSize = true;
             this.vol_staff_label.Location = new System.Drawing.Point(27, 599);
             this.vol_staff_label.Name = "vol_staff_label";
-            this.vol_staff_label.Size = new System.Drawing.Size(69, 19);
+            this.vol_staff_label.Size = new System.Drawing.Size(68, 19);
             this.vol_staff_label.TabIndex = 137;
             this.vol_staff_label.Text = "Volutario: ";
             // 
@@ -271,7 +268,6 @@
             this.dir_staff_tbox.Name = "dir_staff_tbox";
             this.dir_staff_tbox.Size = new System.Drawing.Size(224, 72);
             this.dir_staff_tbox.TabIndex = 131;
-            this.dir_staff_tbox.TextChanged += new System.EventHandler(this.dir_staff_tbox_TextChanged);
             // 
             // dir_staff_label
             // 
@@ -350,7 +346,7 @@
             // fnacimiento_staff_dtime
             // 
             this.fnacimiento_staff_dtime.Location = new System.Drawing.Point(123, 481);
-            this.fnacimiento_staff_dtime.MinimumSize = new System.Drawing.Size(0, 29);
+            this.fnacimiento_staff_dtime.MinimumSize = new System.Drawing.Size(4, 29);
             this.fnacimiento_staff_dtime.Name = "fnacimiento_staff_dtime";
             this.fnacimiento_staff_dtime.Size = new System.Drawing.Size(194, 29);
             this.fnacimiento_staff_dtime.TabIndex = 115;
@@ -360,7 +356,7 @@
             this.tel2_staff_label.AutoSize = true;
             this.tel2_staff_label.Location = new System.Drawing.Point(27, 445);
             this.tel2_staff_label.Name = "tel2_staff_label";
-            this.tel2_staff_label.Size = new System.Drawing.Size(78, 19);
+            this.tel2_staff_label.Size = new System.Drawing.Size(76, 19);
             this.tel2_staff_label.TabIndex = 125;
             this.tel2_staff_label.Text = "Telefono 2: ";
             // 
@@ -399,13 +395,13 @@
             this.tel1_staff_label.AutoSize = true;
             this.tel1_staff_label.Location = new System.Drawing.Point(27, 409);
             this.tel1_staff_label.Name = "tel1_staff_label";
-            this.tel1_staff_label.Size = new System.Drawing.Size(78, 19);
+            this.tel1_staff_label.Size = new System.Drawing.Size(74, 19);
             this.tel1_staff_label.TabIndex = 123;
             this.tel1_staff_label.Text = "Telefono 1: ";
             // 
             // rg_staff_btn
             // 
-            this.rg_staff_btn.Location = new System.Drawing.Point(588, 592);
+            this.rg_staff_btn.Location = new System.Drawing.Point(584, 587);
             this.rg_staff_btn.Name = "rg_staff_btn";
             this.rg_staff_btn.Size = new System.Drawing.Size(147, 23);
             this.rg_staff_btn.TabIndex = 117;
@@ -463,7 +459,6 @@
             this.mod_staff_rbtn.TabStop = true;
             this.mod_staff_rbtn.Text = "Modificar.";
             this.mod_staff_rbtn.UseVisualStyleBackColor = true;
-            this.mod_staff_rbtn.CheckedChanged += new System.EventHandler(this.mod_staff_rbtn_CheckedChanged);
             // 
             // agreg_staff_rbtn
             // 
@@ -475,7 +470,6 @@
             this.agreg_staff_rbtn.TabStop = true;
             this.agreg_staff_rbtn.Text = "Agregar.";
             this.agreg_staff_rbtn.UseVisualStyleBackColor = true;
-            this.agreg_staff_rbtn.CheckedChanged += new System.EventHandler(this.agreg_staff_rbtn_CheckedChanged);
             // 
             // accion_staff_label
             // 
@@ -619,7 +613,7 @@
             this.appaterno_staff_label.AutoSize = true;
             this.appaterno_staff_label.Location = new System.Drawing.Point(27, 200);
             this.appaterno_staff_label.Name = "appaterno_staff_label";
-            this.appaterno_staff_label.Size = new System.Drawing.Size(74, 19);
+            this.appaterno_staff_label.Size = new System.Drawing.Size(73, 19);
             this.appaterno_staff_label.TabIndex = 107;
             this.appaterno_staff_label.Text = "A. Paterno:";
             // 
